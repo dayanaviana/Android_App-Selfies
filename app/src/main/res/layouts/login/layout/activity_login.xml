@@ -1,0 +1,79 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Login"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp"
+        android:hint="Email"
+        android:textSize="24dp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/edt_login_email"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="24dp"
+        android:id="@+id/edt_login_password"/>
+    <TextView
+        android:id="@+id/txt_login_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:textColor="#FF0000"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_height="70dp"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:text="Sign in"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txt_new_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="New User? Register here"
+        />
+        <TextView
+            android:id="@+id/txt_forgot_password"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Forgot password"
+            />
+    </LinearLayout>
+</LinearLayout>

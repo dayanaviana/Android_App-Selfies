@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt_email"/>
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_update_email"
+        android:text="Email"/>
+
+    <Button
+        android:id="@+id/btn_update_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edt_password"
+        android:text="Update Email"/>
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_above="@+id/btn_update_password"
+        android:inputType="textPassword"
+        android:text="Password"/>
+
+    <Button
+        android:id="@+id/btn_update_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_delete_user"
+        android:text="Update Password"/>
+
+    <Button
+        android:id="@+id/btn_delete_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_above="@+id/btn_logout"
+        android:text="Delete User"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btn_logout"
+        android:text="Logout"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
